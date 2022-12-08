@@ -44,11 +44,26 @@ const ticketsRoutes = require('./api/v1/routes/supportTickets/tickets');
 const reportsRoutes = require('./api/v1/routes/reports/reports');
 
 //Database Connection
-mongoose.connect('mongodb+srv://mdali-devops:'+process.env.MONGO_ATLAS_PW+'@villa-booking-system.k5h7zrv.mongodb.net/?retryWrites=true&w=majority', {
-    // useMongoClient: true
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+// mongoose.connect('mongodb+srv://mdali-devops:'+process.env.MONGO_ATLAS_PW+'@villa-booking-system.k5h7zrv.mongodb.net/?retryWrites=true&w=majority', {
+//     // useMongoClient: true
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// });
+
+
+const connectDB = async () => {
+    try {
+      const conn = await mongoose.connect('mongodb+srv://mdali-devops:'+process.env.MONGO_ATLAS_PW+'@villa-booking-system.k5h7zrv.mongodb.net/?retryWrites=true&w=majority', {
+        // useMongoClient: true
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    });
+      console.log(`MongoDB Connected: ${conn.connection.host}`);
+    } catch (error) {
+      console.log(error);
+      process.exit(1);
+    }
+  }
 
 
 //midlleware
