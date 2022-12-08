@@ -13,6 +13,8 @@
 * 5. Get User detailes => https://villa-app.herokuapp.com/v1/users (GET)
 *************************************************
 */
+
+
 const express = require('express');
 const router = express.Router();
 const path = require("path");
@@ -273,16 +275,8 @@ router.post('/userprofile/img', checkAuth, upload.single('productImage'), (req, 
 });
 
 
- //add user
  router.post('/', (req, res, next) => {
-
-    /*
-    ******************** Signup Method ******************
-    * 0 for phone,
-    * 1 for google,
-    * 2 for facebook,
-    * 3 for email
-    */
+    
     const account_type = req.body.login_method;
 
 
@@ -460,7 +454,13 @@ router.post('/userprofile/img', checkAuth, upload.single('productImage'), (req, 
 
 
 
-//login user
+/**
+ * @swagger
+ * /v1/users/login:
+ *   Post:
+ *     summary: Login User
+ *     description: Use this endpoint to Login user. .
+*/
 router.post('/login', (req, res, next) => {
 
     const login_method = req.body.login_method;

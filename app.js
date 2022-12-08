@@ -16,6 +16,10 @@
 
 const express = require('express');
 const app =  express();
+const swaggerUi = require('swagger-ui-express');
+const swaggerFile = require('./swagger_output.json')
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 //package for mongoose driver
 const mongoose = require('mongoose');
