@@ -9,9 +9,9 @@ APIs for Villa Booking System Mobile Apps.
     -   https://www.figma.com/file/R367ziFQCNo88jW8LgXNEo/Villa-App-Admin?node-id=0%3A1
     -   https://www.figma.com/file/2uN3NDV7wkyjoC59CxlY6q/Villa-App-Guest?node-id=0%3A1
 
-<img src="./img/1.png" alt="Screenshot 1"/>
-<img src="./img/2.png" alt="Screenshot 2"/>
-<img src="./img/3.png" alt="Screenshot 3"/>
+![Onboarding 1 – 1](https://user-images.githubusercontent.com/46489315/128313815-559dee18-5674-45db-b557-54132601c882.png)
+![Onboarding 1 – 2](https://user-images.githubusercontent.com/46489315/128313855-fa62de39-19ab-417c-85cb-51679ef6b23f.png)
+![Onboarding 1](https://user-images.githubusercontent.com/46489315/128314047-a4a1f407-8c05-45fd-b034-adc66070ff02.png)
 
 
 ## Project Details:
