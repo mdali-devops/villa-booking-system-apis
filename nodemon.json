@@ -1,0 +1,6 @@
+{
+    "env" : {
+     "MONGO_ATLAS_PW" : "villaapp123",
+     "JWT_KEY": "secretapivillaapp"
+    }
+}

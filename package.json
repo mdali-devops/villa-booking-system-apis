@@ -1,0 +1,31 @@
+{
+  "name": "villa-app-apis",
+  "version": "1.0.0",
+  "description": "This is a project for apis of villa booking system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.heroku.com/villa-app.git"
+  },
+  "engines": {
+    "node": ">=14.16.1"
+  },
+  "keywords": [
+    "villa",
+    "app",
+    "apis"
+  ],
+  "author": "baaztech",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.6",
+    "multer": "^1.4.3"
+  }
+}
